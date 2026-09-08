@@ -1,0 +1,36 @@
+name: Bug
+description: Registrar um comportamento incorreto ou uma regressão.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Onde o problema ocorreu e qual usuário ou perfil foi afetado?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Inclua URL, filtros, período, cenário, captura ou mensagem de erro.
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Integridade
+      options:
+        - label: Confirmei se o problema envolve Realizado, Forecast, Outlook ou permissão.
+          required: true

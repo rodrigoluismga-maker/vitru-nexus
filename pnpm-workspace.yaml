@@ -1,0 +1,9 @@
+packages:
+  - "."
+
+overrides:
+  express@4.22.2>path-to-regexp: 0.1.13
+  tailwindcss>nanoid: 3.3.7
+
+patchedDependencies:
+  wouter@3.7.1: patches/wouter@3.7.1.patch

@@ -1,0 +1,8 @@
+# O proprietário do produto aprova mudanças antes da publicação.
+* @rodrigoluismga-maker
+
+# Áreas de maior risco exigem revisão explícita do proprietário.
+/drizzle/ @rodrigoluismga-maker
+/server/routers/ @rodrigoluismga-maker
+/server/_core/ @rodrigoluismga-maker
+/.github/ @rodrigoluismga-maker

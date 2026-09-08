@@ -1,0 +1,27 @@
+name: Evolução
+description: Propor uma melhoria funcional, analítica ou de experiência.
+title: "[EVOLUÇÃO] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decisão de negócio que a evolução deve apoiar
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo proposto
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+    validations:
+      required: true
+  - type: textarea
+    id: data-source
+    attributes:
+      label: Fonte oficial e lacunas conhecidas

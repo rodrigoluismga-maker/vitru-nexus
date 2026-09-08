@@ -1,0 +1,8 @@
+ALTER TABLE `finance_actual_entries` ADD `deactivatedByBatchId` bigint;--> statement-breakpoint
+ALTER TABLE `finance_budget_lines` ADD `deactivatedByBatchId` bigint;--> statement-breakpoint
+ALTER TABLE `finance_commitments` ADD `deactivatedByBatchId` bigint;--> statement-breakpoint
+ALTER TABLE `finance_forecast_lines` ADD `deactivatedByBatchId` bigint;--> statement-breakpoint
+ALTER TABLE `finance_actual_entries` ADD CONSTRAINT `finance_actual_entries_deactivatedByBatchId_finance_import_batches_id_fk` FOREIGN KEY (`deactivatedByBatchId`) REFERENCES `finance_import_batches`(`id`) ON DELETE set null ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `finance_budget_lines` ADD CONSTRAINT `finance_budget_lines_deactivatedByBatchId_finance_import_batches_id_fk` FOREIGN KEY (`deactivatedByBatchId`) REFERENCES `finance_import_batches`(`id`) ON DELETE set null ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `finance_commitments` ADD CONSTRAINT `finance_commitments_deactivatedByBatchId_finance_import_batches_id_fk` FOREIGN KEY (`deactivatedByBatchId`) REFERENCES `finance_import_batches`(`id`) ON DELETE set null ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `finance_forecast_lines` ADD CONSTRAINT `finance_forecast_lines_deactivatedByBatchId_finance_import_batches_id_fk` FOREIGN KEY (`deactivatedByBatchId`) REFERENCES `finance_import_batches`(`id`) ON DELETE set null ON UPDATE no action;

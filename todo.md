@@ -1,0 +1,285 @@
+# Vitru Nexus V1 — TODO
+
+- [x] Consolidar o brandbook Vitru e registrar tokens visuais, tipografia, logo e regras de uso da marca.
+- [x] Incorporar as versões positiva e negativa do logo Vitru por URLs permanentes de assets.
+- [x] Definir arquitetura funcional, entidades, relacionamentos, permissões e regras de negócio da V1 em documentação do projeto.
+- [x] Modelar empresas com nome, nome curto, sigla, status, cor institucional, logo, descrição e auditoria temporal.
+- [x] Modelar modalidades com nome, descrição, status, ícone e cor.
+- [x] Modelar áreas com nome, gestor, descrição, cor, ícone e status.
+- [x] Modelar perfis RBAC, permissões, associação perfil-permissão e escopos futuros.
+- [x] Estender usuários com foto, cargo, área, empresa, perfil, telefone, status, permissões e último acesso.
+- [x] Modelar categorias, status e prioridades de projetos como cadastros independentes e reutilizáveis.
+- [x] Modelar projetos com todos os campos administrativos, gestores, patrocinadores, responsáveis, indicadores, tags, capa, avanço e saúde.
+- [x] Criar exatamente os projetos “Planejamento Orçamentário 2027” e “Expansão Presencial 2027” sem inventar resultados ou indicadores.
+- [x] Modelar ações, dependências, checklist, comentários, anexos, horas, percentual e histórico.
+- [x] Modelar riscos, marcos, decisões, entregas, indicadores, responsáveis e eventos de auditoria por projeto.
+- [x] Modelar documentos e anexos fora do banco, persistindo apenas metadados, vínculos e controle de acesso.
+- [x] Gerar a migration do schema e aplicá-la ao banco por execução SQL controlada.
+- [x] Implementar camada de acesso a dados modular, tipada e sem duplicação entre cadastros.
+- [x] Implementar APIs tRPC protegidas para dashboard, empresas, modalidades, áreas, usuários, perfis, projetos, categorias, status, prioridades, ações, riscos, decisões, marcos, documentos e notificações.
+- [x] Aplicar autorização no backend para administração, liderança, colaboração e consulta executiva.
+- [x] Implementar upload e consulta segura de logos, capas e documentos em storage externo.
+- [x] Implementar eventos de histórico para alterações relevantes em projetos e ações.
+- [x] Implementar notificações in-app para ações vencidas, decisões pendentes e atualizações relevantes.
+- [x] Avaliar e implementar execução periódica compatível com a infraestrutura para notificações de vencimento, com handler idempotente pronto para ativação após publicação.
+- [x] Construir o Design System dark premium e cinematográfico com tokens Vitru, foco visível, motion reduzido e componentes reutilizáveis.
+- [x] Adaptar o DashboardLayout existente para o shell NEXUS responsivo com navegação executiva e área administrativa.
+- [x] Implementar dashboard executivo com portfólio, saúde, riscos, decisões pendentes, próximas entregas e atividades recentes.
+- [x] Implementar dashboard administrativo com contagens e distribuições por empresa, área e modalidade.
+- [x] Implementar componentes reutilizáveis de listagem com busca, filtros, ordenação, paginação, loading, erro e estado vazio.
+- [x] Implementar componentes reutilizáveis de formulário com validação, confirmação, toast e feedback de salvamento.
+- [x] Implementar telas CRUD premium para empresas, modalidades, áreas, usuários, perfis, categorias, status e prioridades.
+- [x] Implementar telas de gestão de projetos e detalhes do projeto.
+- [x] Implementar telas de ações com checklist, dependências, comentários, anexos e timeline de histórico.
+- [x] Implementar o workspace universal com exatamente 13 seções: Visão Executiva, Dashboard, Indicadores, Resultados, Relatórios, Análises, Documentos, Cronograma, Planos de Ação, Decisões, Responsáveis, Histórico e Insights.
+- [x] Implementar estados honestos para dados ausentes e módulos futuros, sem respostas ou números simulados.
+- [x] Garantir experiência adaptada para desktop, notebook, tablet e celular.
+- [x] Escrever e atualizar testes Vitest para schema, validações, autorização, serviços, APIs e cálculos administrativos.
+- [x] Executar typecheck, testes e build de produção sem erros.
+- [x] Validar visualmente rotas prioritárias em desktop e mobile e corrigir problemas de UI, contraste ou responsividade.
+- [x] Auditar UX, UI, arquitetura, segurança, performance, acessibilidade, escalabilidade e manutenção antes da entrega.
+- [x] Documentar decisões, riscos residuais, limitações da V1 e melhorias recomendadas para o próximo módulo.
+- [x] Adicionar atividades recentes ao dashboard executivo a partir da trilha de auditoria.
+- [x] Adicionar distribuições analíticas do portfólio por empresa, área e modalidade.
+- [x] Evoluir o padrão de listagens para incluir paginação, ordenação e tratamento uniforme de loading e erro.
+- [x] Padronizar validação e confirmação dos formulários administrativos.
+- [x] Concluir o ciclo de arquivamento lógico dos cadastros administrativos e seus bloqueios de integridade.
+- [x] Implementar upload e consulta de logos de empresas e capas de projetos em storage externo.
+- [x] Adicionar gestão de dependências entre ações no backend e na tela de detalhe.
+- [x] Adicionar timeline de histórico específica por ação.
+- [x] Substituir o monograma NEXUS no shell pela aplicação mais adequada da logo oficial Vitru, preservando legibilidade e responsividade.
+- [x] Definir o modelo funcional completo de acompanhamento da Expansão Presencial 2027 sem inventar dados operacionais.
+- [x] Modelar cidades e praças com UF, região, população de referência, status, coordenadas e estágio de expansão.
+- [x] Modelar ofertas de expansão por cidade, marca, unidade, curso, modalidade, turno e período de entrada.
+- [x] Modelar cenários Conservador, Base e Acelerado com premissas, metas, investimentos, capacidade e conversão.
+- [x] Modelar concorrentes privados, presença local, faixas de preço, cursos e evidências de mercado por cidade.
+- [x] Modelar plano de mídia por cidade, canal, campanha, investimento, período, objetivo e status.
+- [x] Modelar força comercial por cidade, canal, responsável, capacidade, metas e estágio de mobilização.
+- [x] Modelar indicadores de expansão com granularidade por cidade, marca, curso, cenário e período.
+- [x] Criar APIs protegidas para cidades, ofertas, cenários, concorrência, mídia, força comercial e indicadores de expansão.
+- [x] Criar a Visão Executiva de Expansão Presencial com leitura por exceção, cobertura, riscos, decisões e entregas.
+- [x] Criar o Dashboard de Expansão Presencial com filtros por cidade, marca, curso, cenário e período.
+- [x] Criar a seção Indicadores com metas, realizado, forecast, variação e evolução temporal quando houver dados.
+- [x] Criar a seção Resultados com comparação entre cenários e desempenho por praça sem dados simulados.
+- [x] Criar as seções Relatórios e Análises com estruturas reutilizáveis para estudos de cidades, potencial, concorrência e viabilidade.
+- [x] Adaptar Documentos com categorias específicas de expansão e preservar os vínculos governados por projeto, ação e decisão.
+- [x] Exibir a jornada de expansão por fases e reutilizar marcos e entregas persistidos para datas, responsáveis e status.
+- [x] Integrar Planos de Ação e Decisões universais ao workspace de expansão e especializar Responsáveis e Histórico no contexto do programa.
+- [x] Criar Insights como estrutura governada e vazia até a futura integração de IA e fontes oficiais.
+- [x] Criar componente visual reutilizável no padrão 16:9 para análises e relatórios de outras áreas.
+- [x] Registrar como dependência externa adiada a aplicação da imagem de referência de tamanho e composição, aguardando envio futuro do usuário.
+- [x] Validar a evolução em desktop, notebook, tablet e celular.
+- [x] Atualizar testes, executar typecheck e build de produção.
+- [x] Auditar UX, dados, segurança, performance e consistência antes do novo checkpoint.
+- [x] Diagnosticar o erro no cadastro de usuários informado pelo usuário.
+- [x] Corrigir o cadastro de usuários e validar criação, edição, convite e vínculos organizacionais.
+- [x] Documentar no Blueprint a decisão de arquitetura do módulo financeiro como domínio autônomo dentro do Vitru Nexus, associado ao Planejamento Orçamentário 2027.
+- [x] Definir e documentar no Blueprint fórmulas oficiais de orçamento original, revisado, realizado, comprometido, forecast, saldo, desvio, consumo, run rate e YoY.
+- [x] Modelar conceitualmente no Blueprint exercícios, versões orçamentárias, marcas, BUs, produtos, centros de custo, contas contábeis, contas gerenciais, naturezas, pilares, canais, iniciativas, fornecedores e contratos.
+- [x] Modelar conceitualmente fatos financeiros mensais para orçamento, realizado, comprometido e forecast com granularidade dimensional auditável.
+- [x] Modelar conceitualmente Casa, Condomínio, regras de rateio, critérios, bases e destinos com rastreabilidade.
+- [x] Modelar conceitualmente lotes de importação, staging, erros, mapeamentos, aprovações, versões e reversões.
+- [x] Especificar no Blueprint data dictionary, template XLSX, regras de validação, KPIs, wireframes, drill-down, segurança e roadmap financeiro.
+- [x] Gerar e aplicar migration aditiva do domínio financeiro sem alterar os dados atuais do NEXUS.
+- [x] Implementar serviços de cálculo financeiro no backend e testes unitários das fórmulas.
+- [x] Implementar APIs protegidas do cockpit, orçamento x realizado, compromissos, investimentos, responsáveis, fornecedores, rateios e cargas.
+- [x] Concluir FKs e índices financeiros pendentes e validar que o schema publicado corresponde ao modelo Drizzle.
+- [x] Validar explicitamente nome e colunas de cada índice financeiro contra o schema Drizzle e registrar a evidência final.
+- [x] Adicionar testes unitários de KPIs, divisões por zero, run rate e reconciliação de rateios.
+- [x] Completar persistência de rateios e comparação real de Orçamento x Realizado nas APIs financeiras.
+- [x] Persistir execuções e lançamentos dos rateios com período, fonte, valores e diferença reconciliada.
+- [x] Expor consultas de rateios baseadas em execuções e lançamentos, além das regras e destinos.
+- [x] Adicionar teste de integração para aprovação de lote de rateio e gravação de runs e entries.
+- [x] Criar navegação própria de Finanças no shell, sem transformar o módulo em uma aplicação paralela.
+- [x] Associar o módulo financeiro ao projeto Planejamento Orçamentário 2027 sem inseri-lo dentro das 13 abas universais.
+- [x] Construir Cockpit Financeiro com KPIs executivos, evolução mensal, desvios, composição, alertas e decisões.
+- [x] Construir drill-down gerencial por empresa, marca, BU, modalidade, produto, área, pilar, canal, projeto, iniciativa, responsável e fornecedor.
+- [x] Construir páginas de Orçamento x Realizado, Comprometimentos, Investimentos, Responsabilidade Financeira, Fornecedores e Rateios.
+- [x] Construir Central de Dados com modelo de arquivo, upload XLSX/CSV, staging, validação, mapeamento, prévia, aprovação e histórico de cargas.
+- [x] Implementar prevenção de duplicidade, versionamento, substituição, complemento e reversão governada de cargas.
+- [x] Criar cadastros parametrizáveis dentro dos tipos financeiros governados definidos no Blueprint, com criação, edição, status e auditoria no banco.
+- [x] Manter dados financeiros vazios e claramente identificados até a entrada de arquivos oficiais, sem MOCK DATA automático.
+- [x] Atualizar testes, executar typecheck, build e auditoria de segurança, dados, UX e responsividade do módulo financeiro.
+- [x] Entregar o Blueprint completo do módulo financeiro e obter validação do usuário antes de iniciar qualquer item de implementação financeira.
+- [x] Implementar templates de carga específicos por tipo, com download controlado para orçamento, realizado, comprometido, forecast, rateios e cadastros.
+- [x] Implementar reconciliação de lote com valores anterior, removido, adicionado, variação e escopo de substituição.
+- [x] Aplicar limite seguro e feedback explícito para arquivos de até 20 MB no MVP, com validação de volume antes do processamento.
+- [x] Registrar no produto o vínculo contextual entre Finanças e o projeto Planejamento Orçamentário 2027.
+- [x] Definir Microsoft 365/Graph como provedor e documentar os requisitos da caixa remetente e da aplicação no Entra ID.
+- [x] Registrar como dependência externa da TI a configuração futura da aplicação no Microsoft Entra ID com `Mail.Send`, consentimento administrativo e caixa remetente autorizada.
+- [x] Registrar como dependência externa da TI a configuração futura de tenant ID, client ID, client secret e e-mail remetente nos ambientes do NEXUS.
+- [x] Modelar histórico de convites com status, tentativas, provedor, destinatário, datas, erro e usuário responsável pelo envio.
+- [x] Implementar serviço de envio de convite institucional com template Vitru e link para `https://vitrunexus.com`.
+- [x] Enviar convite automaticamente após a inclusão de um novo usuário e preservar o cadastro se o provedor estiver temporariamente indisponível.
+- [x] Implementar reenvio manual de convite para usuários com status Convidado.
+- [x] Exibir na administração o último envio, status de entrega e ação de reenviar convite.
+- [x] Manter ativação automática no primeiro login com o mesmo e-mail, sem senha local do NEXUS.
+- [x] Registrar auditoria de envio, reenvio, falha e ativação de convite.
+- [x] Adicionar testes para template, envio, falha do provedor, reenvio, autorização e ativação no primeiro acesso.
+- [x] Adicionar testes de API para reenvio de convite, incluindo bloqueio para usuário não convidado e incremento da tentativa.
+- [x] Adicionar testes de autorização para criação, reenvio, histórico, status e configuração dos convites.
+- [x] Validar a experiência de convite em modo sem credenciais e preparar a funcionalidade para publicação em `vitrunexus.com`.
+- [x] Registrar como etapa futura, condicionada às credenciais da TI, a validação de uma entrega real e a remoção do alerta de configuração do Microsoft Graph.
+- [x] Implementar no cockpit financeiro composição real por dimensão e alertas derivados de desvios, consumo, compromissos e forecast.
+- [x] Integrar ao cockpit as decisões pendentes do Planejamento Orçamentário 2027 com autorização e estados vazios auditáveis.
+- [x] Adicionar testes verificáveis para composição, alertas e decisões do cockpit financeiro.
+- [x] Inventariar stack, autenticação, sessões, banco, storage, APIs, secrets, logs, dependências e integrações atuais para homologação de segurança.
+- [x] Auditar identidade, SSO, MFA, Conditional Access, ciclo de vida de usuários, cookies, tokens, logout, revogação e timeout de sessão.
+- [x] Auditar RBAC, escopos e autorização backend contra IDOR, acesso horizontal, acesso vertical e escalonamento de privilégios.
+- [x] Auditar banco, criptografia, segregação de ambientes, backups, retenção, minimização de dados e controles LGPD.
+- [x] Auditar APIs contra validação insuficiente, exposição excessiva, abuso, CORS, CSRF, SSRF, injection, mass assignment e falhas de autorização.
+- [x] Auditar uploads XLSX, CSV, documentos e imagens contra MIME spoofing, path traversal, malware, execução, acesso indevido e ausência de quarentena.
+- [x] Auditar secrets, variáveis de ambiente, dependências, licenças, supply chain, logs e possíveis exposições no repositório.
+- [x] Auditar headers HTTP, CSP, HSTS, clickjacking, Referrer-Policy, cache, mensagens de erro e rate limiting.
+- [x] Auditar trilha de eventos críticos, imutabilidade, monitoramento, alertas, retenção e resposta a incidentes.
+- [x] Produzir matriz de riscos com evidência, impacto, probabilidade, severidade, recomendação, esforço e prioridade.
+- [x] Definir arquitetura-alvo de identidade corporativa, Zero Trust, menor privilégio, segregação de funções e ciclo de acesso.
+- [x] Definir Blueprint de hardening para aplicação, APIs, banco, storage, cloud, DevSecOps, ambientes e privacidade.
+- [x] Criar checklist de homologação de TI e Segurança, critérios de aceite e roadmap de implementação por ondas.
+- [x] Auditar o Blueprint contra OWASP ASVS, OWASP Top 10, OWASP API Security, NIST CSF 2.0 e controles aplicáveis de LGPD.
+- [x] Entregar diagnóstico e Blueprint para aprovação do usuário antes de qualquer implementação de segurança.
+- [x] Criar baseline e testes negativos para identidade fechada, bloqueio por status e revogação aplicável antes do hardening.
+- [x] Impedir provisionamento automático de identidade não convidada e negar autenticação para usuários inativos ou bloqueados no backend.
+- [x] Implementar autorização documental por objeto, vínculo, projeto e nível de acesso em listagem, upload e download.
+- [x] Substituir download por chave exposta por fluxo governado com identificador de documento e URL assinada de curta duração.
+- [x] Atualizar dependências críticas de runtime e comprovar regressão de storage, autenticação, documentos e importações.
+- [x] Revalidar TLS e host canônico de `vitrunexus.com` e `www.vitrunexus.com`, registrando evidências e pendências de infraestrutura.
+- [x] Registrar evidências verificáveis de banco, storage, rede, criptografia, região, backup e suboperadores disponíveis no ambiente gerenciado.
+- [x] Auditar a estrutura completa da `BASE_REAL_MKT.xlsx` sem modificar o arquivo original.
+- [x] Produzir diagnóstico de qualidade com registros, colunas, tipos, vazios, duplicidades, inconsistências e granularidade.
+- [x] Construir dicionário de dados e interpretar empresa, marca, BU, modalidade, produto, DRE, conta, centro de custo, verba, histórico, tipo, valor e datas.
+- [x] Produzir análise 2025 Realizado versus 2026 Realizado por dimensões disponíveis, com diferença, variação percentual, ranking e limitações.
+- [x] Identificar concentração, sazonalidade, desvios, comportamentos anormais, lançamentos suspeitos e oportunidades de racionalização exclusivamente a partir da base.
+- [x] Propor arquitetura de dados, fatos, dimensões, relacionamentos e evolução para orçamento, comprometido, forecast, saldo, projetos, iniciativas, fornecedores, owners e rateios.
+- [x] Propor arquitetura das telas e visualizações da primeira camada analítica sem implementar dashboards antes da aprovação.
+- [x] Entregar lista de decisões executivas pendentes antes da implementação analítica.
+- [x] Executar typecheck, testes, SCA, build, testes negativos e auditoria final da Onda 0 antes de publicar.
+- [x] Publicar a Onda 0 e entregar o diagnóstico financeiro completo para validação do usuário.
+- [x] Auditar todas as abas da `BASE_REAL_MKTv2.xlsx`, incluindo Glossário, Pontos de Atenção, regras de agrupamento, Realizado e Forecast, sem modificar o arquivo original.
+- [x] Documentar granularidade, relações, convenção de sinal, campos canônicos, inconsistências e limitações metodológicas da fonte V1.
+- [x] Mapear e carregar no banco somente Realizado e Forecast oficiais da V1, em lotes versionados, aprovados, reconciliados e reversíveis.
+- [x] Impedir qualquer exibição de Budget, Comprometido, ROI, Saldo, Resultado ou Eficiência como situação atual enquanto não houver fonte oficial.
+- [x] Implementar contexto analítico global sincronizado por período, cenário, marca, BU, modalidade, produto, categoria, conta, centro de custo e mês.
+- [x] Implementar cockpit narrativo que responda investimento, YoY comparável, distribuição do capital, causas, outlook e pontos de atenção.
+- [x] Implementar comparação separada `Real Jan-Jul/25 × Real Jan-Jul/26` e `FY25 Real × FY26 Outlook`, sem misturar Forecast com Realizado.
+- [x] Implementar Variation Explorer do delta total até marca, categoria, produto, conta, centro de custo e lançamento.
+- [x] Implementar interação por clique em marca, categoria, modalidade, produto, mês e variação, atualizando todo o módulo ao contexto selecionado.
+- [x] Implementar drill-down transacional com valor, competência, marca, BU, modalidade, produto, categoria, conta, verba, centro de custo, histórico e lineage.
+- [x] Transformar o Glossário da planilha em recurso contextual pesquisável e acessível dentro do módulo.
+- [x] Transformar Pontos de Atenção e inconsistências da base em alertas funcionais, filtros e explicações visíveis no produto.
+- [x] Exibir claramente `O que já temos` e `O que estamos construindo`, mantendo recursos futuros bloqueados e sem dados simulados.
+- [x] Aplicar RBAC e escopos financeiros às novas consultas, filtros, exportações e detalhes de lançamento.
+- [x] Criar testes de reconciliação, YoY, outlook, filtros, decomposição, drill-down e separação Realizado/Forecast.
+- [x] Revisar a V1 como CEO, VP, Gestor e Analista e corrigir lacunas de decisão, profundidade ou rastreabilidade.
+- [x] Validar typecheck, testes, build, segurança, performance, desktop, notebook, tablet e celular antes do checkpoint.
+- [x] Documentar a carga oficial, limitações, decisões de UX e critérios de aceite da V1.
+- [x] Publicar e entregar a V1 funcional do módulo Financeiro para a apresentação executiva.
+- [x] Auditar a clareza executiva da comparação Real Jan–Jul/25 × Real Jan–Jul/26 nas telas atuais.
+- [x] Identificar fricções de leitura em valor, delta, YoY, mix, evolução mensal e explicação por driver.
+- [x] Definir uma experiência comparativa 2025 × 2026 mais direta, sem misturar Forecast ou inventar dados.
+- [x] Implementar os aprimoramentos priorizados na Visão Executiva e no Variation Explorer.
+- [x] Validar a nova comparação em desktop, notebook e celular, com testes de reconciliação e regressão.
+- [x] Publicar e documentar a evolução da comparação 2025 × 2026.
+- [x] Corrigir a contagem do card comparável para representar apenas os lançamentos Real Jan–Jul/26 no contexto ativo.
+- [x] Expor na API aumentos brutos, reduções brutas, efeito líquido, participação no Real 2026 e relevância dos drivers.
+- [x] Criar ponte executiva reconciliada `Real 25 + aumentos − reduções = Real 26`.
+- [x] Substituir a evolução comparável principal por barras mensais pareadas de Real 2025 e Real 2026, mantendo Forecast em capítulo separado.
+- [x] Aplicar faróis de relevância, cores direcionais neutras, setas semânticas e ordenação por impacto no Variation Explorer.
+- [x] Adicionar ação explícita de aprofundamento dos drivers até a próxima dimensão e os lançamentos.
+- [x] Implementar filtros adicionais para conta contábil, centro de custo, tipo de lançamento e mês.
+- [x] Permitir multisseleção em todos os filtros do Financeiro de Mercado, com busca e resumo das seleções.
+- [x] Implementar seletor explícito de cenário: Realizado, Forecast e Outlook, sem reclassificação entre cenários.
+- [x] Implementar janelas temporais por mês, trimestre, semestre, ano e período personalizado.
+- [x] Garantir que YoY use sempre meses equivalentes e sinalize quando a comparação não for metodologicamente válida.
+- [x] Exibir janeiro a dezembro no visual temporal, distinguindo meses sem dado, Realizado e Forecast.
+- [x] Criar alternância de visual entre barras comparativas, waterfall de variação e evolução acumulada.
+- [x] Permitir granularidade mensal, trimestral e semestral no gráfico comparativo e no waterfall.
+- [x] Adicionar ordenação por dimensão, Real 25, Real 26, delta, YoY, Mix 26 e relevância no Variation Explorer.
+- [x] Aplicar cores condicionais aos percentuais e valores, diferenciando direção de investimento de avaliação de desempenho.
+- [x] Validar filtros combinados, janelas equivalentes, cenário, ordenação e reconciliação dos novos visuais.
+- [x] Publicar e documentar a evolução analítica avançada do Financeiro de Mercado.
+- [x] Criar comparativo mensal de janeiro a dezembro com Realizado Jan–Jul/26 e Forecast Ago–Dez/26 lado a lado com Real 2025, preservando a identificação de cenário em cada mês.
+- [x] Permitir alternar o gráfico Outlook entre mês, trimestre e semestre, com variação YoY por período e drill-down contextual.
+- [x] Medir e registrar a linha de base numérica dos sete blocos da ordem de serviço V2.
+- [x] Corrigir a aba Insights da Expansão usando componente compartilhado e adicionar fallback de seção nos dois workspaces.
+- [x] Eliminar textos com contraste inferior ao mínimo, fontes abaixo de 11px e bloqueio de zoom mobile.
+- [x] Criar tokens semânticos de marca, superfícies e status e eliminar hexadecimais literais fora de componentes de infraestrutura.
+- [x] Ajustar Prettier para 100 colunas, formatar o projeto e decompor os componentes prioritários conforme os limites da ordem de serviço.
+- [x] Adicionar testes de frontend para workspaces, menu, regras estáticas e bloqueio metodológico do YoY.
+- [x] Remover caminhos absolutos, condicionar analytics, impedir debug em produção e tratar código sem uso com documentação.
+- [x] Verificar zero imports ausentes e preservar comportamento, cálculos, permissões, queries, migrations e schema.
+- [x] Produzir `docs/v2-correcoes.md` com métricas antes/depois e saídas dos comandos de evidência.
+- [x] Validar cada bloco com typecheck, testes e build e publicar a V2 completa.
+- [x] Inventariar todas as páginas, módulos, rotas, menus, APIs, tabelas, fontes e integrações ativas do Vitru Nexus.
+- [x] Mapear lineage completo das fontes até banco, cálculo, indicador e tela.
+- [x] Reconciliar indicadores relevantes entre fonte original, banco, API e interface, classificando OK, divergente ou não validado.
+- [x] Catalogar todos os KPIs com fórmula, período, filtros, granularidade, fonte e comportamento sem dados.
+- [x] Auditar separação Realizado, Forecast e Outlook e equivalência temporal de todos os YoY.
+- [x] Testar filtros isolados, combinados, multisseleção, zero resultado, limpeza e persistência de contexto.
+- [x] Auditar drill-down macro → marca → BU → modalidade → produto → categoria → conta → centro de custo → lançamento.
+- [x] Avaliar todos os gráficos quanto a pergunta, escala, período, cenário, percentuais, tooltip e reação aos filtros.
+- [x] Auditar módulos, cadastros, importações, documentos, ações, decisões, riscos e notificações.
+- [x] Calcular indicadores de qualidade e Data Quality Score com metodologia explícita.
+- [x] Auditar autenticação, autorização, rotas, APIs, secrets, uploads, logs, erros e acessos administrativos.
+- [x] Avaliar UX, acessibilidade, responsividade, performance e experiência de CEO, VP, Gestor e Analista.
+- [x] Classificar achados por criticidade, risco, impacto e evidência.
+- [x] Produzir matriz final de reconciliação, inventário de KPIs, relatório executivo e plano corretivo priorizado.
+- [x] Validar as evidências e entregar a auditoria 360º sem alterar silenciosamente dados ou regras.
+- [x] P1-ERR: diferenciar erro de API, carregamento, zero real e ausência de fonte em todas as superfícies financeiras, com retry e timestamp.
+- [x] P1-SEC: remover completamente o coletor de debug do artefato de produção e bloquear regressão por teste do build.
+- [x] P1-UX: tornar todas as colunas e ações de Usuários acessíveis em notebook, tablet e celular.
+- [x] P1-AUD: retirar health checks e eventos técnicos sem contexto humano do radar executivo, preservando-os na auditoria técnica.
+- [x] P1-CRUD: implementar edição, arquivamento lógico, histórico e regras de fechamento para documentos, riscos, decisões, marcos e entregas.
+- [x] P1-OPS: criar fluxo governado de carga de Mercado com staging, validação, aprovação, ativação, histórico e rollback, sem ativação automática.
+- [x] P1-RBAC: permitir escopos granulares somente por relações oficiais configuradas, mantendo deny-by-default quando não houver mapeamento.
+- [x] P1-READY: comunicar prontidão real de Portfólio, Expansão e placeholders sem simular conteúdo operacional.
+- [x] P1-TEST: adicionar testes E2E para login/RBAC, filtros, drill-down, administração e documentos, além das provas unitárias da Onda 1.
+- [x] Validar os nove P1 com lint, typecheck, testes, build, artefato de produção e matriz responsiva.
+- [x] Documentar, publicar e entregar a Onda 1 com evidência antes/depois e riscos residuais.
+- [x] Validar se Real 2025, Realizado 2026 e Forecast 2026 chegam corretamente ao gráfico mês a mês.
+- [x] Auditar se cores, barras, legenda e tooltips permitem distinguir os três cenários sem ambiguidade.
+- [x] Validar rótulo, período, base transacional e aplicabilidade metodológica dos indicadores exibidos no topo.
+- [x] Avaliar se tabela mensal comparativa deve complementar ou substituir o gráfico principal.
+- [x] Definir a melhor hierarquia executiva para comparação, Outlook, drivers e detalhamento mensal.
+- [x] Entregar diagnóstico criterioso com o que está correto, o que precisa mudar e a recomendação de experiência.
+- [x] Preservar APIs, filtros, drill-down, fonte oficial, regras de sinal e separação Realizado/Forecast durante a cirurgia.
+- [x] Reorganizar a primeira dobra em Realizado comparável Jan–Jul e Outlook anual, com rótulos metodologicamente corretos.
+- [x] Corrigir o gráfico para exibir Real 2025 em cinza e Atual 2026 em amarelo no Realizado e violeta no Forecast, lado a lado por mês.
+- [x] Evoluir o tooltip mensal com cenário, valor, delta absoluto e YoY quando aplicável.
+- [x] Adicionar tabela mensal ordenável com Real 2025, Realizado 2026, Forecast 2026, Outlook, delta, YoY e cenário.
+- [x] Substituir cards de composição por drivers comparativos com Real 2025, Atual 2026, delta, YoY, mix e relevância.
+- [x] Reconciliar os totais da nova primeira tela com fonte, banco e API e bloquear regressões por teste.
+- [x] Validar desktop, notebook e celular, documentar e publicar a cirurgia executiva.
+- [x] Testar filtro isolado por marca e reconciliar KPIs, gráfico, tabela mensal e drivers.
+- [x] Testar filtro combinado por marca, BU e categoria com valores reais da carga ativa.
+- [x] Testar conta contábil e centro de custo, incluindo multisseleção e descrições canônicas.
+- [x] Testar cenários Realizado, Forecast e Outlook nas janelas Jan–Jul, Ago–Dez e ano completo.
+- [x] Testar filtro mensal, trimestre, semestre e granularidades mês, trimestre e semestre.
+- [x] Testar combinação sem resultado e confirmar estado vazio sem números residuais.
+- [x] Testar limpeza e persistência dos filtros na URL entre Visão Executiva, Explorer e Lançamentos.
+- [x] Reconciliar a soma da tabela mensal, barras do gráfico, KPIs e drivers sob cada contexto.
+- [x] Corrigir qualquer divergência encontrada e adicionar teste de regressão correspondente.
+- [x] Documentar e entregar a matriz final de testes reais do novo layout.
+- [x] Auditar o estado atual do repositório Git, remotes, branches, histórico e autenticação GitHub sem expor credenciais.
+- [x] Definir repositório privado, branch principal, homologação e convenção de branches para Claude e correções.
+- [x] Criar arquivos de governança: CODEOWNERS, template de pull request, issue templates e guia de contribuição.
+- [x] Configurar automação de pull request com lint, typecheck, testes e build.
+- [ ] Criar ou conectar o repositório GitHub privado sem reescrever o histórico do projeto.
+- [ ] Publicar branches main e develop/homologação com upstream correto.
+- [ ] Aplicar proteção de branch, revisão obrigatória e bloqueio de push direto quando suportado pelo plano do GitHub.
+- [ ] Validar o fluxo Claude → branch → pull request → revisão → checkpoint/publicação.
+- [ ] Documentar comandos, responsabilidades, critérios de aceite e procedimento de rollback.
+- [ ] Auditar Git, GitHub CLI, Node.js, pnpm e Claude Code no computador do usuário sem expor credenciais.
+- [ ] Definir uma pasta local isolada para o clone do GitHub, sem sobrescrever o Nexus ou o OneDrive atual.
+- [ ] Clonar o repositório privado `rodrigoluismga-maker/vitru-nexus` usando a autenticação do usuário.
+- [ ] Configurar `main`, `develop` e convenção `claude/<id>-<slug>` no clone local.
+- [ ] Garantir que `CLAUDE.md`, CONTRIBUTING, templates e quality gate estejam disponíveis ao Claude Code.
+- [ ] Validar instalação, autenticação e execução segura do Claude Code no repositório.
+- [ ] Validar um primeiro ciclo controlado de branch, commit e pull request sem publicar a aplicação.
+- [ ] Documentar o handoff Claude → PR → revisão Manus → checkpoint/publicação.
+- [ ] Conectar `claude.ai/code` à conta GitHub que possui `rodrigoluismga-maker/vitru-nexus`.
+- [ ] Confirmar que o repositório privado aparece no seletor do Claude Code na web.
+- [ ] Criar ou selecionar a branch `develop` como base das sessões do Claude.
+- [ ] Validar que Claude Code lê `CLAUDE.md`, `CONTRIBUTING.md` e o quality gate no clone isolado.
+- [ ] Criar um primeiro pull request controlado de `claude/<id>-<slug>` para `develop`.
+- [ ] Confirmar o handoff do pull request para revisão, testes oficiais e publicação pelo Manus.

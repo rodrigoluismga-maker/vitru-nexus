@@ -1,0 +1,69 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1788445108084,
+      "tag": "0000_wandering_ser_duncan",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1788445642216,
+      "tag": "0001_strong_surge",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1788452025867,
+      "tag": "0002_watery_spyke",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1788454145191,
+      "tag": "0003_fair_maria_hill",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1788455759150,
+      "tag": "0004_magical_mauler",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1788457301237,
+      "tag": "0005_cloudy_aqueduct",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1788459593557,
+      "tag": "0006_salty_bruce_banner",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1788486933241,
+      "tag": "0007_typical_morlun",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1788518224745,
+      "tag": "0008_luxuriant_ben_grimm",
+      "breakpoints": true
+    }
+  ]
+}
