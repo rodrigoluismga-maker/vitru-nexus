@@ -29,10 +29,10 @@ Depois do clone, confirme que a branch atual é `main` e que o arquivo `CLAUDE.m
 
 No GitHub Desktop, selecione **Current branch → New branch**.
 
-| Campo | Valor |
-|---|---|
-| Nome | `develop` |
-| Base | `main` |
+| Campo | Valor     |
+| ----- | --------- |
+| Nome  | `develop` |
+| Base  | `main`    |
 
 Clique em **Publish branch**. Claude não deve trabalhar diretamente em `main` ou `develop`.
 

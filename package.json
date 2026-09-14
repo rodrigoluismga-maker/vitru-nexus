@@ -14,6 +14,7 @@
     "test": "vitest run",
     "test:ci": "vitest run client/src/pages/finance/FinanceMarketUi.test.ts client/src/pages/project/WorkspaceRendering.test.ts server/finance.test.ts server/microsoft-graph-invitations.test.ts server/nexus.validation.test.ts",
     "quality": "pnpm lint && pnpm check && pnpm test:ci && pnpm build",
+    "quality:full": "pnpm lint && pnpm check && pnpm test && pnpm build",
     "db:push": "drizzle-kit generate && drizzle-kit migrate"
   },
   "dependencies": {
