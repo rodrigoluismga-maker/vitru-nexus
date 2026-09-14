@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { BarChart3, CalendarDays, FileText, Settings2, Sparkles } from "lucide-react";
 
 const Home = lazy(() => import("./pages/Home"));
+const Changelog = lazy(() => import("./pages/Changelog"));
 const Documents = lazy(() => import("./pages/Documents"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Placeholder = lazy(() => import("./pages/Placeholder"));
@@ -49,6 +50,7 @@ function Router() {
           )}
         />
         <Route path={"/documents"} component={Documents} />
+        <Route path={"/changelog"} component={Changelog} />
         <Route
           path={"/analytics"}
           component={() => (

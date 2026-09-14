@@ -4,6 +4,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { adminRouter } from "./routers/admin";
 import { actionsRouter } from "./routers/actions";
+import { changelogRouter } from "./routers/changelog";
 import { dashboardRouter } from "./routers/dashboard";
 import { documentsRouter } from "./routers/documents";
 import { governanceRouter } from "./routers/governance";
@@ -40,5 +41,6 @@ export const appRouter = router({
   media: mediaRouter,
   documents: documentsRouter,
   notifications: notificationsRouter,
+  changelog: changelogRouter,
 });
 export type AppRouter = typeof appRouter;

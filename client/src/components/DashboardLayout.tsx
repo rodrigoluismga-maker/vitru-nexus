@@ -62,6 +62,7 @@ const mainNavigation = [
   { icon: FileText, label: "Documentos", path: "/documents" },
   { icon: ChartNoAxesCombined, label: "Análises", path: "/analytics" },
   { icon: CalendarDays, label: "Agenda", path: "/agenda" },
+  { icon: History, label: "Novidades", path: "/changelog" },
 ];
 const adminNavigation = [
   { icon: LayoutGrid, label: "Painel Admin", path: "/admin" },
