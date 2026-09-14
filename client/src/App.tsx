@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { BarChart3, CalendarDays, FileText, Settings2, Sparkles } from "lucide-react";
+import { BarChart3, CalendarDays, FileText, Settings2, Sparkles, Tag } from "lucide-react";
 
 const Home = lazy(() => import("./pages/Home"));
 const Changelog = lazy(() => import("./pages/Changelog"));
@@ -81,6 +81,17 @@ function Router() {
         />
         <Route path={"/finance/context"} component={() => <FinanceMarket view="context" />} />
         <Route path={"/finance/future"} component={() => <FinanceMarket view="future" />} />
+        <Route
+          path={"/pricing"}
+          component={() => (
+            <Placeholder
+              eyebrow="Pricing"
+              title="Pricing"
+              description="Painel novo, com estrutura ainda a ser definida antes de qualquer dado real."
+              icon={Tag}
+            />
+          )}
+        />
         <Route
           path={"/settings"}
           component={() => (

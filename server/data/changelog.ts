@@ -27,6 +27,35 @@ export interface LegacyCheckpoint {
  */
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
   {
+    id: "2026-09-14-nav-panels",
+    date: "2026-09-14",
+    title: "Navegação em painéis macro com abas internas",
+    summary:
+      "O menu deixou de ser uma lista única e passou a ter dois níveis: painel macro e abas dentro dele, preparado para crescer sem virar bagunça.",
+    area: "produto",
+    highlights: [
+      "Painéis Estratégico, Projetos, Financeiro, Inteligência, Pricing, Cadastros e Gestão",
+      "Cadastros e Gestão separam empresas/modalidades/áreas de usuários/perfis, antes num grupo só",
+      "Pricing entra como painel novo, honesto e vazio até termos escopo definido",
+      "Configurações pessoais migrou do menu admin para o menu da conta",
+    ],
+    reference: "PR #4",
+  },
+  {
+    id: "2026-09-14-changelog-page",
+    date: "2026-09-14",
+    title: "Página de Novidades e histórico de versão",
+    summary:
+      "Nova tela que responde à pergunta 'essa é a versão mais recente?' sem precisar perguntar para alguém — é esta página que você está lendo agora.",
+    area: "produto",
+    highlights: [
+      "Disponível para qualquer usuário autenticado, no painel Estratégico",
+      "Fonte de dados é um arquivo versionado no repositório, sem tabela nova no banco",
+      "Checkpoints anteriores do Manus listados sem inventar datas que a fonte não tinha",
+    ],
+    reference: "PR #2",
+  },
+  {
     id: "2026-09-14-github-sync",
     date: "2026-09-14",
     title: "Sincronização GitHub e governança de pull requests",
