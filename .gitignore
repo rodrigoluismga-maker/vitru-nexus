@@ -112,3 +112,15 @@ temp/
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
 .project-config.json
+
+# Planilhas, dumps e backups oficiais — nunca versionar dados sensíveis
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.sql.gz
+*.dump
+*.dmp
+*.backup
+
