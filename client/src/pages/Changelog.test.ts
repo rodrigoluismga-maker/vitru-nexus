@@ -14,6 +14,6 @@ describe("Changelog", () => {
 
   it("está registrado na rota e na navegação principal", () => {
     expect(read("App.tsx")).toContain('path={"/changelog"}');
-    expect(read("components/DashboardLayout.tsx")).toContain('path: "/changelog"');
+    expect(read("nav/panels.ts")).toContain('path: "/changelog"');
   });
 });
